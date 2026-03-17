@@ -6,6 +6,201 @@
     <title>Proyecto Back To me </title>
 </head>
 <body>
-    
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2b5876, #4e4376);
+      color: #fff;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #00eaff;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00eaff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .search-box input {
+      padding: 12px;
+      width: 300px;
+      border-radius: 25px 0 0 25px;
+      border: none;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 12px 20px;
+      border: none;
+      background: #00eaff;
+      color: #000;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 15px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    .lost {
+      background: #ff4d4d;
+    }
+
+    .found {
+      background: #00ffae;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: rgba(0,0,0,0.3);
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+
+  <header>
+    <h1>🔍 BackToMe</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Publicar</a>
+      <a href="#">Categorías</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Encuentra lo que perdiste 💙</h2>
+    <p>Explora objetos perdidos o ayuda a alguien a recuperar los suyos</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Buscar objeto...">
+      <button>Buscar</button>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Objetos recientes</h2>
+
+    <div class="grid">
+      <div class="card">
+        <img src="images/celular.webp" alt="">
+        <h3>Celular Samsung</h3>
+        <p>Perdido en el parque central</p>
+        <span class="tag lost">Perdido</span>
+      </div>
+
+      <div class="card">
+        <img src="images/mochila.webp" alt="">
+        <h3>Mochila negra</h3>
+        <p>Encontrada cerca de la universidad</p>
+        <span class="tag found">Encontrado</span>
+      </div>
+
+      <div class="card">
+        <img src="images/llaves.jpg" alt="">
+        <h3>Llaves</h3>
+        <p>Perdidas en el bus</p>
+        <span class="tag lost">Perdido</span>
+      </div>
+
+      <div class="card">
+        <img src="images/billetera.webp" alt="">
+        <h3>Billetera</h3>
+        <p>Encontrada en cafetería</p>
+        <span class="tag found">Encontrado</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 BackToMe  — Universidad De Nariño
+  </footer>
 </body>
-</html>cd
+</html>
